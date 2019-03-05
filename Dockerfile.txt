@@ -1,0 +1,6 @@
+FROM ubuntu:latest
+RUN apt-get update && \
+    apt-get -y install python3
+WORKDIR /bin
+COPY Lab1.py /bin/Lab1.py
+RUN python3 /bin/Lab1.py
